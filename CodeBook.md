@@ -24,7 +24,7 @@ output: html_document
   * Label column of variable subject as "Subject"
   * Label second column of variable y as "Activity"
   * Label each column of variable x with features variable
-  * Create a single data frame with (subject, y, x) in which first column contains subject, second column contains y (activity label), and the following 561 columns contains x (set of all features).
+  * Create a single data frame stored in a variable _data_ with (subject, y, x) in which first column contains subject, second column contains y (activity label), and the following 561 columns contains x (set of all features).
   
 4. Extracts only the measurements on the mean and standard deviation for each measurement. This is done dropping 
 all the columns corresponding to features that doesn't content in their name "mean" or "std"
@@ -33,7 +33,7 @@ all the columns corresponding to features that doesn't content in their name "me
 
 6. Uses descriptive activity names to name the activities in the data set. This is done via name_activity function that replace de label of the activity to its corresponding name.
 
-7. Create independent tidy data set with the average of each variable for each activity and each subject. 
+7. Create independent tidy data set with the average of each variable for each activity and each subject, stored in a variable _newData_ 
 
 8. Rename Subject and Activity columns.
   
