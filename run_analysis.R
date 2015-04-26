@@ -35,6 +35,8 @@ data<-data[,index]
 columNames<-colnames(data)
 columNames[3:7]
 columNames<-sub("\\()","",columNames)
+columNames<-sub("-",".",columNames)
+columNames<-sub("-",".",columNames)
 columNames[3:7]
 colnames(data)<-columNames
 # Uses descriptive activity names to name the activities in the data set
