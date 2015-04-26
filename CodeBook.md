@@ -16,6 +16,8 @@ output: html_document
   - 'train/X_train.txt' -> xtrain (train set)
   - 'train/y_train.txt' -> ytrain (train labels)
   
+  Detailed description of the experiment as well as the features could be found in Readme.txt and features_info.txt files
+  
 
 3. Merges train and test sets to create one data set:
   * Concatenates vertically subject\_test with subject_train in a variable called subject
@@ -33,7 +35,7 @@ all the columns corresponding to features that doesn't content in their name "me
 
 6. Uses descriptive activity names to name the activities in the data set. This is done via name_activity function that replace de label of the activity to its corresponding name.
 
-7. Create independent tidy data set with the average of each variable for each activity and each subject, stored in a variable _newData_ 
+7. Create independent tidy data set with the average of each variable for each activity and each subject, stored in a variable _newData_. Data were splited by subject and activity and the mean of each variable was calculated for each group via "aggreagate" function. Due to the nature of mean function units doesn't change.
 
-8. Rename Subject and Activity columns.
+8. Rename Subject and Activity columns because name was modified in previous step.
   
